@@ -2,7 +2,8 @@
 
 body{
     margin: 0;
-    font-family: 'Lato Bold', sans-serif;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 10px;
 }
 
 *{
@@ -41,9 +42,9 @@ ul{
 }
 
 .logo{
-    font-size: 25px;
+    font-size: 2.5em;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1;
     letter-spacing: -0.55px;
     cursor: pointer;
@@ -52,10 +53,10 @@ ul{
     color: #f06c64;
 }
 .nav__list{
-    font-size: 12px;
+    font-size: 1.2em;
     display: flex;
     padding-top: 9.9px;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.37px;
     list-style: none;
 }
 .nav__list-item{
@@ -85,4 +86,38 @@ ul{
     top: -3px;
 }
 
-  
+.slider{
+    position: relative;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    height: 600px;
+}
+
+.slider .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow{
+    width: 16px;
+    height: 27px;
+    background: url("assets/icons/chev.png") no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+.arrow_right{
+    transform: rotate(180deg);
+}
+
+.slider__phone{
+    display: flex;
+}
+.slider__phone_vert{
+    padding-top: 53px;
+}
+.slider__phone_horiz{
+    padding: 174px 0 0 73px;
+}

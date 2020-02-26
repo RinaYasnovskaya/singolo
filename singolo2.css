@@ -16,6 +16,7 @@ p{
 }
 ul{
     margin: 0;
+    padding: 0;
 }
 
 .wrapper{
@@ -25,3 +26,133 @@ ul{
 }
 
 /*portfolio*/
+
+.portfolio{
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+    padding-top: 60px;
+    padding-bottom: 68px;
+}
+
+.portfolio__title{
+    font-size: 3.0em;
+    color: #666d89;
+    font-family: 'Lato Black', sans-serif;
+    padding-bottom: 22px;
+}
+.portfolio__description{
+    font-family: 'Lato Light', sans-serif;
+    color: #666d89;
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+
+.portfolio__tags{
+    color: #666d89;
+    font-size: 1.2em;
+}
+.tags__list{
+    display: flex;
+    list-style: none;
+}
+.tags__item{
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin-right: 9.9px;
+    padding: 2px 6.2px;
+    cursor: pointer;
+}
+.tags__item:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.tags__item_active{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.portfolio__art{
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+    max-height: 620px;
+    overflow: hidden;
+}
+.art__item{
+    padding-bottom: 18px;
+}
+
+/*about*/
+
+.about{
+    padding-top: 59px;
+    text-align: justify;
+    background-color: #f2f2f2;
+    padding-bottom: 68px;
+    border-bottom: 6px solid #ffffff;
+}
+
+.about__title{
+    font-size: 3.0em;
+    color: #666d89;
+    font-family: 'Lato Black', sans-serif;
+    padding-bottom: 18px;
+    letter-spacing: -.2px;
+}
+.about__description{
+    font-family: 'Lato Light', sans-serif;
+    color: #666d89;
+    font-size: 1.8em;
+    padding-bottom: 45px;
+    line-height: 1.7;
+}
+
+.about__inner{
+    display: flex;
+}
+.inner-item{
+    padding-right: 19px;
+}
+.inner-item:last-child{
+    padding-left: 2px;
+}
+
+.item-logo{
+    padding-bottom: 13px;
+}
+.item-title{
+    color: #666d89;
+    font-size: 1.8em;
+    font-family: 'Lato Black', sans-serif;
+    padding-bottom: 9px;
+    letter-spacing: -.2px;
+}
+.item-descr{
+    color: #767e9e;
+    font-size: 1.2em;
+    font-family: 'Lato Light', sans-serif;
+    line-height: 1.8;
+    letter-spacing: .089px;
+}
+
+.social-media{
+    display: flex;
+    padding-top: 23px;
+}
+.media-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #656d89;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+.media-item:hover{
+    background-color: #b6b9c9;
+    cursor: pointer;
+}

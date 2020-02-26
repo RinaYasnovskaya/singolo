@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="singolo1.css" rel="stylesheet">
+    <link href="singolo2.css" rel="stylesheet">
+
     <title>SINGOLO</title>
 </head>
 <body>
@@ -13,12 +14,14 @@
             <p class="portfolio__description">
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
             </p>
-            <div class="portfolio__tags">
-                <div class="tags__item"><button>All</button></div>
-                <div class="tags__item"><button>Web Design</button></div>
-                <div class="tags__item"><button>Graphic Design</button></div>
-                <div class="tags__item"><button>Artwork</button></div>
-            </div>
+            <nav class="portfolio__tags">
+                <ul class="tags__list">
+                    <li class="tags__item tags__item_active">All</li>
+                    <li class="tags__item">Web Design</li>
+                    <li class="tags__item">Graphic Design</li>
+                    <li class="tags__item">Artwork</li>
+                </ul>
+            </nav>
             <div class="portfolio__art">
                 <div class="art__item"><img src="assets/img/1.png" alt="1"></div>
                 <div class="art__item"><img src="assets/img/2.png" alt="2"></div>
@@ -37,7 +40,7 @@
     </section>
     <section class="about">
         <div class="wrapper">
-            <h2 class="about__title">About us</h2>
+            <h2 class="about__title">About Us</h2>
             <p class="about__description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio 

@@ -4,6 +4,7 @@ body{
     margin: 0;
     font-family: 'Lato Regular', sans-serif;
     font-size: 10px;
+    text-align: justify;
 }
 *{
     box-sizing: border-box;
@@ -127,7 +128,7 @@ ul{
     border-bottom: 6px solid #ffffff;
     padding-top: 62px;
     
-    text-align: justify;
+    
     
 }
 .services__title{

@@ -17,10 +17,11 @@
             </p>
             <div class="get__inner">
                 <form class="get__form" action="#">
-                    <input class="get__input" type="text" placeholder="Name" required>
-                    <input class="get__input" type="email" placeholder="E-mail" required>
-                    <input class="get__input" type="text" placeholder="Subject">
-                    <textarea class="get__input" name="info" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                    <input class="get__input line" type="text" placeholder="Name (Required)" required>
+                    <input class="get__input line" type="email" placeholder="E-mail (Required)" required>
+                    <input class="get__input line" type="text" placeholder="Subject">
+                    <textarea class="area get__input" name="info"  placeholder="Describe your project in detail..."></textarea>
+                    <input class="submit" type="button" value="Submit">
                 </form>
                 <div class="contact-info">
                     <h4 class="contact-info__title">Contact Information</h4>
@@ -31,16 +32,16 @@
                     </p>
                     <div class="contact-info__inner">
                         <div class="inner-item">
-                            <div class="inner-icon"></div>
+                            <div class="inner-icon location"><img src="assets/icons/location.png" alt="location"></div>
                             <span class="inner-link">Elm St. 14/05 Lost City</span>
                         </div>
                         <div class="inner-item">
-                            <div class="inner-icon"></div>
-                            <a href="tel:035283318635" class="inner-link">03528 331 86 35</a>
+                            <div class="inner-icon"><img src="assets/icons/phone.png" alt="phone"></div>
+                            <a href="tel:035283318635" class="inner-link"> 03528 331 86 35</a>
                         </div>
                         <div class="inner-item">
-                            <div class="inner-icon"></div>
-                            <a href="mailto:info@singolo.com" class="inner-link">info@singolo.com</a>
+                            <div class="inner-icon"><img src="assets/icons/mail.png" alt="mail"></div>
+                            <a href="mailto:info@singolo.com" class="inner-link"> info@singolo.com</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +50,7 @@
     </section>
     <footer class="foo">
         <div class="wrapper">
-            <span class="copyright"></span>
+            <span class="copyright">© Copyright 2013</span>
             <div class="foo__social-media">
                 <div class="foo__media-item"><img src="assets/icons/facebook.png" alt="facebook"></div>
                 <div class="foo__media-item"><img src="assets/icons/google.png" alt="google"></div>

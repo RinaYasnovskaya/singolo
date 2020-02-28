@@ -51,8 +51,7 @@ ul{
     padding-top: 44px;
 }
 .get__form{
-    min-width: 619px;
-    
+    min-width: 619px; 
 }
 .get__form .get__input{
     width: 100%;
@@ -62,17 +61,21 @@ ul{
     margin-bottom: 16px;
     padding-left: 15px;
     color: #f48c8f;
-    font-size: 1.2em;
+    
 }
 .get__input::placeholder{
     color: #f48c8f;
 }
 .line{
     height: 38px;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 1.2em;
 }
 .area{
     height: 202px;
-    padding-top: 11px;
+    padding-top: 10px;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 1.2em;
 }
 .submit{
     background-color: #d6564f;
@@ -100,6 +103,7 @@ ul{
     font-size: 1.2em;
     padding-top: 10px;
     line-height: 1.9;
+    word-spacing: -0.3px;
 }
 
 .contact-info__inner{
@@ -137,12 +141,14 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 0;
 }
 .copyright{
     letter-spacing: -.2px;
 }
 .foo__social-media{
     display: flex;
+    padding-right: 34px;
 }
 .foo__media-item{
     display: flex;

@@ -133,6 +133,7 @@ ul{
     font-family: 'Lato Black', sans-serif;
     padding-bottom: 8px;
     letter-spacing: -.2px;
+    white-space: nowrap;
 }
 .item-descr{
     color: #767e9e;

@@ -76,6 +76,7 @@ ul{
     padding-top: 10px;
     font-family: 'Lato Regular', sans-serif;
     font-size: 1.2em;
+    resize: none;
 }
 .submit{
     background-color: #d6564f;
@@ -110,7 +111,7 @@ ul{
     padding-top: 23px;
     font-size: 1.2em;
 }
-.inner-item{
+.contact-info__inner-item{
     display: flex;
     padding-bottom: 7px;
 }
@@ -120,7 +121,7 @@ ul{
 .location{
     padding-left: 2px;
 }
-.inner-item a{
+.contact-info__inner-item a{
     text-decoration: none;
     color: #f0d8d9;
 }
@@ -159,4 +160,8 @@ ul{
     border: 1px solid #656d89;
     border-radius: 50px;
     margin-right: 8px;
+}
+.foo__media-item:hover{
+    background-color: #b6b9c9;
+    cursor: pointer;
 }

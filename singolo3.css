@@ -28,7 +28,7 @@ ul{
 
 /*get a quote*/
 
-.get{
+section[class=get]{
     background-color: #f06c64;
     color: #f0d8d9;
     padding-top: 59px;

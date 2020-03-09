@@ -118,6 +118,7 @@ ul{
     display: flex;
 }
 .inner-item{
+    max-width: 319px;
     padding-right: 19px;
 }
 .inner-item:last-child{
@@ -134,6 +135,8 @@ ul{
     padding-bottom: 8px;
     letter-spacing: -.2px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .item-descr{
     color: #767e9e;

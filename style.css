@@ -1,5 +1,8 @@
 @import "fonts.css";
 
+html{
+    scroll-behavior: smooth; 
+}
 body{
     margin: 0;
     font-family: 'Lato Regular', sans-serif;
@@ -63,17 +66,29 @@ ul{
     position: relative;
     margin-left: 32px;
 }
-.nav__list-item a{
+a{
     color: #ffffff;
     text-decoration: none;
     display: block;
 }
-.nav__list-item a:hover{
-    color: #f06c64;
+/*.nav__list-item a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
 }
-.nav__list-item_active a {
+.nav__list-item:hover{
     color: #f06c64;
+}*/
+
+.nav__list-item_active{
+    color: #f06c64;
+    cursor: default;
 }
+
+a:not(.nav__list-item_active):hover{
+    color:#f06c64
+}
+
 .nav__list-item:not(:last-child)::after {
     content: ".";
     color: #494e62;
@@ -99,27 +114,146 @@ ul{
 }
 
 .arrow{
+    display: inline-block;
+    position: absolute;
+    top: 46.7%;
     width: 16px;
     height: 27px;
-    background: url("assets/icons/chev.png") no-repeat;
     border: none;
     cursor: pointer;
-    margin-top: 50px;
-    margin-left: 2px;
 }
 .arrow_right{
-    transform: rotate(180deg);
+    left: 0;
+    background: url("assets/icons/chevr.png") no-repeat;
+}
+.arrow_left{
+    background: url("assets/icons/chev.png") no-repeat;
+}
+
+.arrow-control{
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    width: 2%;
+    cursor: pointer;
+}
+.arrow-control.left{
+    right: auto;
+    left: 175px;
+}
+.arrow-control.right{
+    right: 164px;
+    left:auto;
+}
+
+.slider__inner{
+    margin-left: 73px;
+}
+.slider__inner-items{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .slider__phone{
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out;
+    margin: 0 auto;
+}
+.active,
+.next {
+  display: block;
+}
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+
+.slider__phone-inner{
     display: flex;
 }
+
+.arrow.right {
+    right: 50%;
+  }
+  
+  .to-left {
+    animation-name: left;
+  }
+  
+  .from-right {
+    animation-name: right;
+  }
+  
+  .to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+  
+  .from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+  
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+.blue-slide{
+    background-color: #648bf0;
+}
+
 .slider__phone_vert{
     padding-top: 53px;
+    cursor: pointer;
 }
 .slider__phone_horiz{
-    padding: 174px 0 0 73px;
+    margin: 0 0 0 73px;
+    padding-top: 174px;
+    cursor: pointer;
 }
+
+/* black screen */
+
+#black-screen-vert{
+    position: absolute;
+    background: black;
+    top: 0;
+    cursor: pointer;
+    width: 188px;
+    height: 333px;
+    margin-top: 118px;
+    margin-left: 14px;
+}
+#black-screen-hor{
+    position: absolute;
+    background: black;
+    top: 0;
+    cursor: pointer;
+    width: 333px;
+    height: 188px;
+    margin-top: 188px;
+    margin-left: 60px;
+}
+
+/*-----*/
 
 /*services*/
 .services{
@@ -221,7 +355,7 @@ ul{
     cursor: pointer;
     letter-spacing: -.04px;
 }
-.tags__item:hover{
+.tags__item:not(.tags__item_active):hover{
     color: #ffffff;
     border: 1px solid #ffffff;
 }
@@ -241,8 +375,15 @@ ul{
     overflow: hidden;
 }
 .art__item{
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 }
+
+/* border */ 
+.border{
+    outline: 5px solid #F06C64; 
+    outline-offset: -5px;
+}
+/*-----*/
 
 /*about*/
 
@@ -351,7 +492,6 @@ ul{
     margin-bottom: 16px;
     padding-left: 15px;
     color: #f48c8f;
-    
 }
 .get__input::placeholder{
     color: #f48c8f;
@@ -378,7 +518,46 @@ ul{
     width: 100px;
     height: 30px;
     margin-left: 84%;
+    cursor: pointer;
 }
+
+/* block hidden */
+#message-block{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0008;
+}
+#message{
+    padding: 40px;
+    width: 700px;
+    border: 3px solid #ad3832;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 5% auto;
+    background: #1119;
+}
+#close{
+    background-color: #d6564f;
+    border: 1px solid #ad3832;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 70px;
+    height: 30px;
+}
+.hidden{
+    display:none;
+}
+hr.style {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(0.25turn, #333, #d6564f, #333);
+}
+
+  /*----*/
 
 .contact-info{
     color: #f0d8d9;

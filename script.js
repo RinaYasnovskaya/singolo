@@ -122,10 +122,10 @@ SUBMIT.addEventListener('click', () =>{
     const get_subject = document.getElementById('get-subject').value.toString();
     const get_description = document.getElementById('description-area').value.toString();
 
-    if(get_subject) document.getElementById('subject').innerText = get_subject;
+    if(get_subject) document.getElementById('subject').innerText = 'Тема: ' + get_subject;
     else document.getElementById('subject').innerText = 'Без темы';
 
-    if(get_description) document.getElementById('description_mes').innerText = get_description;
+    if(get_description) document.getElementById('description_mes').innerText = 'Описание: ' + get_description;
     else document.getElementById('description_mes').innerText = 'Без описания';
         
 });

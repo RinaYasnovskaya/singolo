@@ -1,7 +1,8 @@
 const NAVIGATION = document.getElementById('navigation');
+const SECTIONS = document.querySelectorAll('body>section');
 
 const ITEMS_LIST = document.querySelectorAll('.slider__inner .slider__phone');
-const SLIDER = document.getElementById('slider');
+const SLIDER = document.getElementById('home');
 const LEFT_ARROW = document.querySelector('.arrow-control.left');
 const RIGHT_ARROW = document.querySelector('.arrow-control.right');
 
@@ -24,6 +25,20 @@ let isEnabled = true;
 NAVIGATION.addEventListener('click', (event) =>{
     NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav__list-item_active'));
     event.target.classList.add('nav__list-item_active');
+});
+document.addEventListener('scroll', function (event){
+    const currentPos = window.scrollY;
+
+    SECTIONS.forEach(el => {
+        if(el.offsetTop-86 <= currentPos){
+            NAVIGATION.querySelectorAll('a').forEach(a => {
+                a.classList.remove('nav__list-item_active');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                    a.classList.add('nav__list-item_active');
+                }
+            });
+        }
+    })
 });
 
 // slider
@@ -79,20 +94,20 @@ RIGHT_ARROW.addEventListener('click', function() {
 // slider black screen
 PHONE_VERT.addEventListener('click', () =>{
 
-    if(document.getElementById('black-screen-vert').classList == "hidden") {
-        document.getElementById('black-screen-vert').classList.remove('hidden');
+    if(BLACK_SCREEN_VERT.classList.contains('hidden')) {
+        BLACK_SCREEN_VERT.classList.remove('hidden');
     }
-    else document.getElementById('black-screen-vert').classList.add('hidden');
+    else BLACK_SCREEN_VERT.classList.add('hidden');
 });
 BLACK_SCREEN_VERT.addEventListener('click', () =>{
     BLACK_SCREEN_VERT.classList.add('hidden');
 });
 
 PHONE_HOR.addEventListener('click', () =>{
-    if(document.getElementById('black-screen-hor').classList == "hidden") {
-        document.getElementById('black-screen-hor').classList.remove('hidden');
+    if(BLACK_SCREEN_HOR.classList.contains('hidden')) {
+        BLACK_SCREEN_HOR.classList.remove('hidden');
     }
-    else document.getElementById('black-screen-hor').classList.add('hidden');
+    else BLACK_SCREEN_HOR.classList.add('hidden');
 });
 BLACK_SCREEN_HOR.addEventListener('click', () =>{
     BLACK_SCREEN_HOR.classList.add('hidden');

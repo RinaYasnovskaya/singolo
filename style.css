@@ -30,10 +30,16 @@ ul{
 
 /*header*/
 .header{
+    scroll-margin-top: 70px;
     background-color: #2d303a;
     height: 95px;
     border-bottom: 6px solid #323746;
     text-transform: uppercase;
+
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: all 0.3s ease;
 }
 .header .wrapper{
     display: flex;
@@ -102,10 +108,12 @@ a:not(.nav__list-item_active):hover{
 
 /*slider*/
 .slider{
+    scroll-margin-top: 70px;
     position: relative;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    height: 600px;
+    height: 695px;
+    padding-top: 95px;
 }
 .slider .wrapper{
     display: flex;
@@ -257,6 +265,7 @@ a:not(.nav__list-item_active):hover{
 
 /*services*/
 .services{
+    scroll-margin-top: 70px;
     color: #666d89;
     background-color: #f2f2f2;
     padding-bottom: 32px;
@@ -319,6 +328,7 @@ a:not(.nav__list-item_active):hover{
 /*portfolio*/
 
 .portfolio{
+    scroll-margin-top: 70px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
     padding-top: 59px;
@@ -388,6 +398,7 @@ a:not(.nav__list-item_active):hover{
 /*about*/
 
 .about{
+    scroll-margin-top: 70px;
     padding-top: 59px;
     background-color: #f2f2f2;
     padding-bottom: 67px;
@@ -460,6 +471,7 @@ a:not(.nav__list-item_active):hover{
 /*get a quote*/
 
 .get{
+    scroll-margin-top: 70px;
     background-color: #f06c64;
     color: #f0d8d9;
     padding-top: 59px;

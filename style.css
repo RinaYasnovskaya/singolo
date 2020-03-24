@@ -24,7 +24,7 @@ ul{
 
 .wrapper{
     margin: 0 auto;
-    width: 1020px;
+    max-width: 1020px;
     padding: 0 40px;
 }
 
@@ -168,6 +168,10 @@ a:not(.nav__list-item_active):hover{
     position: relative;
     animation: 0.5s ease-in-out;
     margin: 0 auto;
+}
+.phone-blue img{
+    margin-top: 17px;
+    width: 100%;
 }
 .active,
 .next {
@@ -382,6 +386,7 @@ a:not(.nav__list-item_active):hover{
     flex-flow: wrap;
 
     max-height: 620px;
+    width: 940px;
     overflow: hidden;
 }
 .art__item{
@@ -423,8 +428,8 @@ a:not(.nav__list-item_active):hover{
     display: flex;
 }
 .inner-item{
-    max-width: 319px;
-    padding-right: 19px;
+    width: 319px;
+    padding-right: 20px
 }
 .inner-item:last-child{
     padding-left: 2px;
@@ -433,6 +438,11 @@ a:not(.nav__list-item_active):hover{
 .item-logo{
     padding-bottom: 13px;
 }
+.item-logo img{
+    min-width: 218px;
+    width: 100%;
+}
+
 .item-title{
     font-size: 1.8em;
     font-family: 'Lato Black', sans-serif;
@@ -493,8 +503,8 @@ a:not(.nav__list-item_active):hover{
     display: flex;
     padding-top: 44px;
 }
-.get__form{
-    min-width: 619px; 
+.inner__form{
+    width: 87%;
 }
 .get__form .get__input{
     width: 100%;
@@ -574,6 +584,7 @@ hr.style {
 .contact-info{
     color: #f0d8d9;
     padding-left: 21px;
+    width: 45%;
 }
 .contact-info__title{
     font-family: 'Lato Black', sans-serif;
@@ -645,4 +656,42 @@ hr.style {
 .foo__media-item:hover{
     background-color: #b6b9c9;
     cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .slider{
+        height: 557px;
+    }
+    .slider__inner{
+        margin-left: 46px;
+    }
+    .slider__phone_vert img{
+        width: 180px;
+    }
+    .slider__phone_horiz img{
+        width: 364px;
+    }
+    .slider__phone_horiz{
+        margin: 0 0 0 54px;
+    }
+    .arrow-control{
+        top: 122px;
+    }
+    .arrow-control.left{
+        left: 31px;
+    }
+    .arrow-control.right{
+        right: 15px;
+    }
+    .portfolio__art{
+        max-height: 821px;
+        width: 688px;
+    }
+    .art__item{
+        width: 31.5%;
+    }
+    
+    .submit{
+        margin-left: 77.5%;
+    }
 }

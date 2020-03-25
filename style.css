@@ -233,12 +233,12 @@ a:not(.nav__list-item_active):hover{
 }
 
 .slider__phone_vert{
-    padding-top: 53px;
+    padding-top: 6.6%;
     cursor: pointer;
 }
 .slider__phone_horiz{
     margin: 0 0 0 73px;
-    padding-top: 174px;
+    padding-top: 22%;
     cursor: pointer;
 }
 
@@ -658,6 +658,24 @@ hr.style {
     cursor: pointer;
 }
 
+.burger{
+    position: absolute;
+    z-index: 4;
+    background-color: white;
+    height: 100%;
+    width: 278px;
+}
+.burger-block{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0008;
+    z-index: 4;
+}
+
 @media(max-width: 768px){
     .slider{
         height: 557px;
@@ -707,3 +725,90 @@ hr.style {
     }
 }
 
+@media(max-width: 375px){
+    .nav{
+        display: none;
+    }
+    .header .wrapper{
+        justify-content: center;
+        padding-top: 20.5px;
+    }
+    .header{
+        height: 71px;
+    }
+    .slider{
+        height: 321px;
+    }
+    .slider__inner{
+        margin-left: 6px;
+    }
+    .slider__phone_vert img{
+        width: 88px;
+    }
+    .slider__phone_horiz img{
+        width: 177px;
+    }
+    .slider__phone_horiz {
+        margin: 0 0 0 26px;
+    }
+    .arrow-control.left {
+        left: 11px;
+    }
+    .arrow-control.right {
+        right: 24px;
+    }
+    .arrow-control{
+        top: 27%;
+    }
+    #black-screen-vert {
+        width: 69px;
+        height: 122px;
+        margin-top: 43px;
+        margin-left: 5px;
+    }
+    #black-screen-hor {
+        width: 122px;
+        height: 69px;
+        margin-top: 69px;
+        margin-left: 22px;
+    }
+    .about__inner{
+        flex-wrap: wrap;
+    }
+    .inner-item{
+        padding-right: 0;
+        margin-bottom: 34px;
+    }
+    .tags__item{
+        padding: 2px 5px;
+    }
+    .portfolio__description{
+        line-height: 1.7;
+    }
+    .portfolio__art{
+        width: 315px;
+        height: 586px;
+    }
+    .art__item{
+        width: 48%;
+    }
+    .get__inner{
+        flex-wrap: wrap;
+    }
+    .inner__form,
+    .contact-info{
+        width: 100%;
+        padding-left: 0;
+    }
+    .submit{
+        margin-left: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .get__form{
+        margin-bottom: 32px;
+    }
+    .burger{
+        display: block;
+    }
+}

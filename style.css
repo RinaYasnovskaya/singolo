@@ -550,6 +550,7 @@ a:not(.nav__list-item_active):hover{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 6;
     background: #0008;
 }
 #message{
@@ -558,7 +559,7 @@ a:not(.nav__list-item_active):hover{
     border: 3px solid #ad3832;
     border-radius: 30px;
     font-size: 20px;
-    margin: 5% auto;
+    margin: 15% auto;
     background: #1119;
 }
 #close{
@@ -884,5 +885,10 @@ hr.style {
     }
     .hidden-burger{
         display: block;
+    }
+    #message {
+        padding: 20px;
+        width: 300px;
+        font-size: 17px;
     }
 }

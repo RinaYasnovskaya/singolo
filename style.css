@@ -662,7 +662,7 @@ hr.style {
     background-color: #2d303a;
     height: 100%;
     width: 278px;
-    transition: 0.2s;
+    
 }
 .burger-block{
     display: none;
@@ -675,6 +675,7 @@ hr.style {
     z-index: 4;
     text-transform: uppercase;
     font-family: 'Lato Bold', sans-serif;
+    transition: left .5s linear;
 }
 .menu{
     display: flex;
@@ -688,10 +689,8 @@ hr.style {
     position: absolute;
     z-index: 5;
     left: 23px;
-    display: hidden;
 }
 .menu-btn {
-    display: block;
     width: 20px;
     height: 25px;
     position: relative;
@@ -737,6 +736,9 @@ hr.style {
 }
 .nav__bar-item_active{
     color: #F06C64;
+}
+.hidden-burger{
+    display: none;
 }
 
 @media(max-width: 768px){
@@ -874,16 +876,13 @@ hr.style {
     .get__form{
         margin-bottom: 32px;
     }
-    .burger{
-        display: block;
-    }
     .about,
     .portfolio,
     .services,
     .get{
         scroll-margin-top: 50px;
     }
-    .burger-menu{
+    .hidden-burger{
         display: block;
     }
 }

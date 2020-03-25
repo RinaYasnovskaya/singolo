@@ -140,7 +140,7 @@ a:not(.nav__list-item_active):hover{
 
 .arrow-control{
     position: absolute;
-    top: 4px;
+    top: 99px;
     bottom: 0;
     width: 2%;
     cursor: pointer;
@@ -668,11 +668,23 @@ hr.style {
     .slider__phone_vert img{
         width: 180px;
     }
+    #black-screen-vert{
+        width: 142px;
+        height: 250px;
+        margin-top: 102px;
+        margin-left: 10px;
+    }
     .slider__phone_horiz img{
         width: 364px;
     }
     .slider__phone_horiz{
         margin: 0 0 0 54px;
+    }
+    #black-screen-hor{
+        width: 251px;
+        height: 142px;
+        margin-top: 184px;
+        margin-left: 45px;
     }
     .arrow-control{
         top: 122px;
@@ -690,8 +702,8 @@ hr.style {
     .art__item{
         width: 31.5%;
     }
-    
     .submit{
         margin-left: 77.5%;
     }
 }
+

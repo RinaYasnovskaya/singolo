@@ -659,11 +659,10 @@ hr.style {
 }
 
 .burger{
-    position: absolute;
-    z-index: 4;
-    background-color: white;
+    background-color: #2d303a;
     height: 100%;
     width: 278px;
+    transition: 0.2s;
 }
 .burger-block{
     display: none;
@@ -674,6 +673,70 @@ hr.style {
     left: 0;
     background: #0008;
     z-index: 4;
+    text-transform: uppercase;
+    font-family: 'Lato Bold', sans-serif;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 23px;
+    padding-left: 22px;
+}
+.burger-menu{
+    top: 20px;
+    position: absolute;
+    z-index: 5;
+    left: 23px;
+    display: hidden;
+}
+.menu-btn {
+    display: block;
+    width: 20px;
+    height: 25px;
+    position: relative;
+    margin-right: 28px;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%; 
+  margin-top: -1px;
+  left: 50%; 
+  margin-left: -13px;
+  width: 25px;
+  height: 2.2px;
+  background-color: white;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+.menu-btn span::before {
+  transform: translateY(-6.4px);
+}
+.menu-btn span::after {
+  transform: translateY(6.4px);
+}
+.active-btn{
+    transform: rotate(90deg);
+}
+
+.menu-nav{
+    margin-top: 187px;
+    margin-left: 71px;
+    font-size: 2.4em;
+    line-height: 2;
+}
+.nav__bar{
+    list-style: none;
+    padding-left: 0;
+}
+.nav__bar-item_active{
+    color: #F06C64;
 }
 
 @media(max-width: 768px){
@@ -726,6 +789,9 @@ hr.style {
 }
 
 @media(max-width: 375px){
+    .logo{
+        font-size: 1.9em;
+    }
     .nav{
         display: none;
     }
@@ -809,6 +875,15 @@ hr.style {
         margin-bottom: 32px;
     }
     .burger{
+        display: block;
+    }
+    .about,
+    .portfolio,
+    .services,
+    .get{
+        scroll-margin-top: 50px;
+    }
+    .burger-menu{
         display: block;
     }
 }

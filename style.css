@@ -112,7 +112,7 @@ a:not(.nav__list-item_active):hover{
     position: relative;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    height: 695px;
+    padding-bottom: 56px;
     padding-top: 95px;
 }
 .slider .wrapper{
@@ -155,7 +155,7 @@ a:not(.nav__list-item_active):hover{
 }
 
 .slider__inner{
-    margin-left: 73px;
+    margin-left: 72px;
 }
 .slider__inner-items{
     position: relative;
@@ -171,7 +171,7 @@ a:not(.nav__list-item_active):hover{
 }
 .phone-blue img{
     margin-top: 17px;
-    width: 100%;
+    width: 95%;
 }
 .active,
 .next {
@@ -242,6 +242,7 @@ a:not(.nav__list-item_active):hover{
     cursor: pointer;
 }
 
+
 /* black screen */
 
 #black-screen-vert{
@@ -261,7 +262,7 @@ a:not(.nav__list-item_active):hover{
     cursor: pointer;
     width: 333px;
     height: 188px;
-    margin-top: 188px;
+    margin-top: 190px;
     margin-left: 60px;
 }
 
@@ -385,12 +386,12 @@ a:not(.nav__list-item_active):hover{
     justify-content: space-between;
     flex-flow: wrap;
 
-    max-height: 620px;
+    height: 620px;
     width: 940px;
     overflow: hidden;
 }
 .art__item{
-    margin-bottom: 18px;
+    margin-bottom: 21px;
 }
 
 /* border */ 
@@ -440,7 +441,7 @@ a:not(.nav__list-item_active):hover{
 }
 .item-logo img{
     min-width: 218px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .item-title{
@@ -742,33 +743,14 @@ hr.style {
     display: none;
 }
 
-@media(max-width: 768px){
-    .slider{
-        height: 557px;
+
+@media (min-width: 768px) and (max-width:1020px){
+    
+    .slider {
+        height: 68vw;
     }
-    .slider__inner{
-        margin-left: 46px;
-    }
-    .slider__phone_vert img{
-        width: 180px;
-    }
-    #black-screen-vert{
-        width: 142px;
-        height: 250px;
-        margin-top: 102px;
-        margin-left: 10px;
-    }
-    .slider__phone_horiz img{
-        width: 364px;
-    }
-    .slider__phone_horiz{
-        margin: 0 0 0 54px;
-    }
-    #black-screen-hor{
-        width: 251px;
-        height: 142px;
-        margin-top: 184px;
-        margin-left: 45px;
+    .inner-item {
+        padding-right: 20px;
     }
     .arrow-control{
         top: 122px;
@@ -779,19 +761,50 @@ hr.style {
     .arrow-control.right{
         right: 15px;
     }
-    .portfolio__art{
-        max-height: 821px;
-        width: 688px;
+    .tags__item{
+        padding: 2px 5px;
     }
-    .art__item{
-        width: 31.5%;
+    .portfolio__description{
+        line-height: 1.7;
     }
     .submit{
         margin-left: 77.5%;
     }
+    
+}
+@media (max-width: 768px){
+    
+    .slider__phone_vert img{
+        width: 180px;
+    }
+    .slider__phone_horiz img{
+        width: 364px;
+    }
+    #black-screen-vert {
+        width: 142px;
+        height: 251px;
+        margin-top: 89px;
+        margin-left: 10px;
+    }
+    #black-screen-hor {
+        width: 251px;
+        height: 143px;
+        margin-top: 146px;
+        margin-left: 45px;
+    }
+    .portfolio__art {
+        width: 697px;
+        height: 107vw;
+    }
 }
 
-@media(max-width: 375px){
+@media (min-width: 375px) and (max-width: 767px){
+    .slider__inner{
+        margin-left: 3vw;
+    }
+    .wrapper{
+        padding: 0 30px;
+    }
     .logo{
         font-size: 1.9em;
     }
@@ -806,16 +819,11 @@ hr.style {
         height: 71px;
     }
     .slider{
-        height: 321px;
+        height: 77vw;
+        padding-top: 18vw;
     }
-    .slider__inner{
-        margin-left: 6px;
-    }
-    .slider__phone_vert img{
-        width: 88px;
-    }
-    .slider__phone_horiz img{
-        width: 177px;
+    .blue-slide {
+        padding-top: 15vw;
     }
     .slider__phone_horiz {
         margin: 0 0 0 26px;
@@ -855,8 +863,8 @@ hr.style {
         line-height: 1.7;
     }
     .portfolio__art{
-        width: 315px;
-        height: 586px;
+        width: 81vw;
+        height: 107vw;
     }
     .art__item{
         width: 48%;
@@ -892,3 +900,133 @@ hr.style {
         font-size: 17px;
     }
 }
+ @media (min-width: 320px) and (max-width: 695px){
+    .services__elem {
+        width: 300vw;
+    }
+    .slider__inner{
+        margin-left: 3vw;
+    }
+}
+@media (max-width: 375px){
+    .slider__phone_vert img{
+        width: 88px;
+    }
+    .slider__phone_horiz img{
+        width: 177px;
+    }
+    .inner-item {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+    .slider__phone_vert img{
+        width: 74px;
+    }
+    .slider__phone_horiz img{
+        width: 161px;
+    }
+     .slider{
+        height: 77vw;
+        padding-top: 22vw;
+    }
+    .slider__phone_horiz {
+        margin: 0 0 0 14px;
+    }
+    .slider__inner{
+        margin-left: 3vw;
+    }
+    .wrapper{
+        padding: 0 30px;
+    }
+    .logo{
+        font-size: 1.9em;
+    }
+    .nav{
+        display: none;
+    }
+    .header .wrapper{
+        justify-content: center;
+        padding-top: 20.5px;
+    }
+    .header{
+        height: 71px;
+    }
+    
+    .blue-slide {
+        padding-top: 15vw;
+    }
+    .arrow-control.left {
+        left: 11px;
+    }
+    .arrow-control.right {
+        right: 24px;
+    }
+    .arrow-control{
+        top: 27%;
+    }
+    #black-screen-vert {
+        width: 59px;
+        height: 104px;
+        margin-top: 37px;
+        margin-left: 4px;
+    }
+    #black-screen-hor {
+        width: 111px;
+        height: 63px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .about__inner{
+        flex-wrap: wrap;
+    }
+    .inner-item{
+        padding-right: 0;
+        margin-bottom: 34px;
+    }
+    .tags__item{
+        padding: 2px 5px;
+    }
+    .portfolio__description{
+        line-height: 1.7;
+    }
+    .portfolio__art{
+        width: 78vw;
+        height: 113vw;
+    }
+    .art__item{
+        width: 48%;
+    }
+    .get__inner{
+        flex-wrap: wrap;
+    }
+    .inner__form,
+    .contact-info{
+        width: 100%;
+        padding-left: 0;
+    }
+    .submit{
+        margin-left: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .get__form{
+        margin-bottom: 32px;
+    }
+    .about,
+    .portfolio,
+    .services,
+    .get{
+        scroll-margin-top: 50px;
+    }
+    .hidden-burger{
+        display: block;
+    }
+    #message {
+        padding: 20px;
+        width: 300px;
+        font-size: 17px;
+    }
+} 
+

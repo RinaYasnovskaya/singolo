@@ -831,7 +831,7 @@ hr.style {
     }
     .portfolio__art{
         width: 81vw;
-        height: 107vw;
+        height: 154vw;
     }
     .art__item{
         width: 48%;
@@ -881,7 +881,7 @@ hr.style {
         margin-left: 3vw;
     }
     .slider{
-        padding-top: 13%;
+        padding-top: 19%;
     }
 }
 @media (max-width: 375px){

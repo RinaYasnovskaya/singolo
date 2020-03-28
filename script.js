@@ -1,4 +1,5 @@
 const NAVIGATION = document.getElementById('navigation');
+const NAV_BAR = document.getElementById('nav__bar');
 const SECTIONS = document.querySelectorAll('body>section');
 
 const ITEMS_LIST = document.querySelectorAll('.slider__inner .slider__phone');
@@ -18,6 +19,9 @@ const GET_FORM = document.getElementById('get__form');
 const SUBMIT = document.getElementById('submit');
 const CLOSE = document.getElementById('close');
 
+const BURGER_MENU = document.getElementById('burger-menu');
+const BURGER_BLOCK = document.getElementById('burger-block');
+
 let current = 0;
 let isEnabled = true;
 
@@ -26,6 +30,12 @@ NAVIGATION.addEventListener('click', (event) =>{
     NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav__list-item_active'));
     event.target.classList.add('nav__list-item_active');
 });
+// NAV_BAR.addEventListener('click', (event) =>{
+//     NAV_BAR.querySelectorAll('a').forEach(el => el.classList.remove('nav__bar-item_active'));
+//     event.target.classList.add('nav__bar-item_active');
+// });
+
+
 document.addEventListener('scroll', function (event){
     const currentPos = window.scrollY;
 
@@ -160,3 +170,11 @@ CLOSE.addEventListener('click', () =>{
 });
 
 
+// burger-menu
+BURGER_MENU.addEventListener('click', () => {
+    BURGER_BLOCK.style = 'display: block';
+});
+
+BURGER_BLOCK.addEventListener('click', () =>{
+    BURGER_BLOCK.style = 'display: none';
+});
